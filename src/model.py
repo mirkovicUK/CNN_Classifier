@@ -11,7 +11,7 @@ def conv1x1(in_planes, out_planes, stride=1):
     """1x1 convolution"""
     return nn.Conv2d(in_planes, out_planes, kernel_size=1, stride=stride, bias=False)
 
-# from torch implementation of ResNet arhitecture 
+# torch implementation of ResNet arhitecture 
 #https://github.com/pytorch/vision/blob/a9a8220e0bcb4ce66a733f8c03a1c2f6c68d22cb/torchvision/models/resnet.py#L56-L72
 class BasicBlock(nn.Module):
     expansion = 1
@@ -61,7 +61,7 @@ class BasicBlock(nn.Module):
         return out
 
 
-# from torch implementation of ResNet arhitecture 
+# torch implementation of ResNet arhitecture 
 #https://github.com/pytorch/vision/blob/a9a8220e0bcb4ce66a733f8c03a1c2f6c68d22cb/torchvision/models/resnet.py#L56-L72
 class Bottleneck(nn.Module):
     # Bottleneck in torchvision places the stride for downsampling at 3x3 convolution(self.conv2)
